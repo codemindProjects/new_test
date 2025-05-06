@@ -1,0 +1,77 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card Container */
+  #main-section {
+    background-color: #fff;
+    border-radius: 16px;
+    width: 320px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover animation */
+  #main-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 30px rgba(0,0,0,0.2);
+  }
+  
+  /* Profile Image */
+  #profile-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #764ba2;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Zoom image on hover */
+  #main-section:hover #profile-info img {
+    transform: scale(1.05);
+  }
+  
+  /* Name and Description */
+  #profile-desc h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #profile-desc p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Style */
+  .profile-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #764ba2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+  }
+  
+  .profile-btn:hover {
+    background: #5a3696;
+  }
+  
